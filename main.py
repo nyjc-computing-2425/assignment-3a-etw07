@@ -17,10 +17,10 @@ else:
     sum += 4
   checkdigit = sum%11
   if nric[0] == "S" or nric[0] == "T":
-    ST = ["J","Z","I","H","G","F","E","D","C","B","A"]
+    ST = "JZIHGFEDCBA"
     alpha = ST[checkdigit]
   else:
-    FG = ["x","W","U","T","R","Q","P","N","M","L","K"]
+    FG = "XWUTRQPNMLK"
     alpha = FG[checkdigit]
   if alpha == nric[8]:
     print("NRIC is valid.")
